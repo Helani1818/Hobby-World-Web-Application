@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Website</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+<script>
+function newsletterfunction()
+{
+	var b=document.newsletter.email.value;
+	if(b.indexOf('@')<=0)
+	{
+		alert("***Invalid.Check the Email Id Again***");
+		return false;
+	}
+	
+	if(b.charAt(b.length-4)!='.' && b.charAt(b.length-3)!='.')
+	{
+		alert("***Invalid Email***");
+		return false;
+	}
+}
+</script>
+	<div>
+	
+	<ul>
+	  <img src="images\Capture.PNG" width="120" height="100">
+	  <li> <a href="index.html"> Home </a></li>
+	  <li> <a href="gallery.html"> Gallery </a></li>
+	  <li> <a href="purchases.html"> Purchases </a></li>
+	  <li> <a href="news&promotions.html"> News and Promotions </a></li>
+	  <li><a href="aboutus.html"> About Us </a></li>
+	  <li><a href="contactus.html"> Contact Us </a></li>
+	  <li> <a href="signin.html"> Sign In </a></li>
+	  <li> <a href="register.html"> Register </a></li>
+	  </ul>
+		
+	</div>
+    
+    <div>
+	
+    <p class="a"> <b> Categories </b> </p>
+	<ul class="h">
+	  <li class="h"> <a href="collecting.html"> Collecting </a></li>
+	  <li class="h"> <a href="games.html"> Games </a></li>
+	  <li class="h"> <a href="reading.html"> Reading </a></li>
+	  <li class="h"> <a href="sports.html"> Sports </a></li>
+	  <li class="h"> <a href="performingarts.html"> Performing Arts </a></li>
+	  <li class="h"> <a href="other.html"> Other </a></li>
+	</ul>
+	</div>
+    
+    <h1 style="font-size:36px"> <b> <u> Contact Us </u> </b> </h1>
+    <p style="font-size:32px; font-family:Algerian; color:#C00; margin-left:25%; text-align:left;"> <b> How is our service? </b> </p>
+    <p style="font-size:32px; font-family:Algerian; color:#C00; margin-left:30%; text-align:left;"> <b> Is your product in good quality? </b> </p>
+    
+    
+    <p style="margin-left:25%; text-align:left; font-size:24px;"> <b> Feel free to contact us on Facebook or Instagram. </b> </p> 
+    <p style="margin-left:25%; text-align:left; font-size:24px;"> <b> Send us an email and give us a feedback. </b> </p>
+    <p style="margin-left:25%; text-align:left; font-size:24px;"> <b> Your feedbacks are more important us to improve our service. </b> </p>
+    <p style="margin-left:25%; text-align:left; font-size:24px;"> <b> If you have complaint about the product you purchase send us an email. </b> </p>
+    
+   
+    <div style="background-color:#000">
+
+    <p class="footer"> <b> Join with our Newsletter </b> </p>
+    <form class="footer" onSubmit="newsletterfunction()" name="newsletter">
+    <b>Email :</b>   
+	<input type="text" name="email" value="">
+    <input type="SUBMIT"> <br> <br>
+    </form>
+    <br>
+    
+    <p class="footer"> <b> Safe Shopping and Delivery </b> </p>
+    <br>
+    <p class="footers"> <b> Hobby World </b> </p>
+    <p class="footers"> <b> No.62, Mallikarama Road, Ratmalana </b> </p>
+    <p class="footers"> <b> Telephone No: 0112713303 / 0769401597 </b> </p>
+    <p class="footers"> <b> hobbyworld@gmail.com </b> </p>
+    
+    </div>
+</body>
+</html>

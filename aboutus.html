@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Website</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+<script>
+function newsletterfunction()
+{
+	var b=document.newsletter.email.value;
+	if(b.indexOf('@')<=0)
+	{
+		alert("***Invalid.Check the Email Id Again***");
+		return false;
+	}
+	
+	if(b.charAt(b.length-4)!='.' && b.charAt(b.length-3)!='.')
+	{
+		alert("***Invalid Email***");
+		return false;
+	}
+}
+</script>
+	<div>
+	
+	<ul>
+	  <img src="images\Capture.PNG" width="120" height="100">
+	  <li> <a href="index.html"> Home </a></li>
+	  <li> <a href="gallery.html"> Gallery </a></li>
+	  <li> <a href="purchases.html"> Purchases </a></li>
+	  <li> <a href="news&promotions.html"> News and Promotions </a></li>
+	  <li><a href="aboutus.html"> About Us </a></li>
+	  <li><a href="contactus.html"> Contact Us </a></li>
+	  <li> <a href="signin.html"> Sign In </a></li>
+	  <li> <a href="register.html"> Register </a></li>
+	  </ul>
+		
+	</div>
+    
+    <div>
+	
+    <p class="a"> <b> Categories </b> </p>
+	<ul class="h">
+	  <li class="h"> <a href="collecting.html"> Collecting </a></li>
+	  <li class="h"> <a href="games.html"> Games </a></li>
+	  <li class="h"> <a href="reading.html"> Reading </a></li>
+	  <li class="h"> <a href="sports.html"> Sports </a></li>
+	  <li class="h"> <a href="performingarts.html"> Performing Arts </a></li>
+	  <li class="h"> <a href="other.html"> Other </a></li>
+	</ul>
+	</div>
+    
+    <div>
+    <h1> <b> Who are we? </b> </h1>
+    <p> <b> We started our journey in 1980 as a small company. </b> </p>
+    <p> <b> We wanted to help you on buying the products you want for your hobby or the the spare time activity. </b> </p>
+    <p> <b> Always we are trying our best to give you the product at the lowest price possible while maintaining the quality of it. </b> </p>
+    <p> <b> Our team includes product testers, marketing manager and agents from the companies where we get the products. </b> </p>
+    </div>
+    <br> 
+    <br>
+    
+<p style="font-size:24px;"> <b> Why you have to select us? </b> </p>    
+<table style="margin-left:25%; background-color:#CCC"; border="1"; bordercolor="#000099";>	
+<tr><td style="padding-bottom:8px; padding-left:25px; padding-right:25px; padding-top:8px;";>
+<img src = "images\lowest-price-guarantee.png" />
+<p> <b> Lowest Price </b> </p>
+</td>
+<td style="padding-bottom:8px; padding-left:20px; padding-right:20px; padding-top:8px;";>
+<img src = "images\quality.jpg" />
+<p> <b> Best Quality </b> </p>
+</td>
+<td style="padding-bottom:8px; padding-left:20px; padding-right:20px; padding-top:8px;";>
+<img src = "images\serviceprimer.jpg" />
+<p> <b> Excellent Customer Service </b> </p>
+</td>
+</tr>
+</table>
+    
+    <div style="background-color:#000">
+
+    <p class="footer"> <b> Join with our Newsletter </b> </p>
+    <form class="footer" onSubmit="newsletterfunction()" name="newsletter">
+    <b>Email :</b>   
+	<input type="text" name="email" value="">
+    <input type="SUBMIT"> <br> <br>
+    </form>
+    <br>
+    
+    <p class="footer"> <b> Safe Shopping and Delivery </b> </p>
+    <br>
+    <p class="footers"> <b> Hobby World </b> </p>
+    <p class="footers"> <b> No.62, Mallikarama Road, Ratmalana </b> </p>
+    <p class="footers"> <b> Telephone No: 0112713303 / 0769401597 </b> </p>
+    <p class="footers"> <b> hobbyworld@gmail.com </b> </p>
+    
+    </div>
+</body>
+</html>

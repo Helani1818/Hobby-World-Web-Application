@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Website</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<style>
+table{margin:auto;margin-left:15%;background:#099;}
+td{text-align:justify;}
+.name{padding:15px;text-align:center; color:#FFF;}
+</style>
+</head>
+
+<body>
+
+<script>
+function newsletterfunction()
+{
+	var b=document.newsletter.email.value;
+	if(b.indexOf('@')<=0)
+	{
+		alert("***Invalid.Check the Email Id Again***");
+		return false;
+	}
+	
+	if(b.charAt(b.length-4)!='.' && b.charAt(b.length-3)!='.')
+	{
+		alert("***Invalid Email***");
+		return false;
+	}
+}
+</script>
+
+<div>
+	
+	<ul>
+	  <img src="images\Capture.PNG" width="120" height="100">
+	  <li> <a href="index.html"> Home </a></li>
+	  <li> <a href="gallery.html"> Gallery </a></li>
+	  <li> <a href="purchases.html"> Purchases </a></li>
+	  <li> <a href="news&promotions.html"> News and Promotions </a></li>
+	  <li><a href="aboutus.html"> About Us </a></li>
+	  <li><a href="contactus.html"> Contact Us </a></li>
+	  <li> <a href="signin.html"> Sign In </a></li>
+	  <li> <a href="register.html"> Register </a></li>
+	  </ul>
+	</div>
+    
+    <div>
+	
+    <p class="a"> <b> Categories </b> </p>
+	<ul class="h">
+	  <li class="h"> <a href="collecting.html"> Collecting </a></li>
+	  <li class="h"> <a href="games.html"> Games </a></li>
+	  <li class="h"> <a href="reading.html"> Reading </a></li>
+	  <li class="h"> <a href="sports.html"> Sports </a></li>
+	  <li class="h"> <a href="performingarts.html"> Performing Arts </a></li>
+	  <li class="h"> <a href="other.html"> Other </a></li>
+	</ul>
+	</div>
+
+<h1> <b> <u> Dress Designing </u> </b> </h1>    
+<p> <b> Dress Designing Tools </b> </p>
+<table style="margin-left:35%; background-color:#099"; border="1"; bordercolor="#000099";>
+<tr><td style="padding-bottom:8px; padding-left:25px; padding-right:25px; padding-top:8px;";>
+<img src = "images\200-pcs-lot-round-pearl-head-dressmaking.jpg" />
+<div class = "name"> <b> Needle Pins. </b> </div>
+<p> <b> $24.70 </b> </p>
+</td>
+<td style="padding-bottom:8px; padding-left:25px; padding-right:25px; padding-top:8px;";><img src = "images\Dressmaking Tools.jpg" />
+<div class = "name"> <b> Sewing Machine. </b> </div>
+<p> <b> $85.90 </b> </p>
+</td></tr>
+<tr><td style="padding-bottom:8px; padding-left:25px; padding-right:25px; padding-top:8px;";><img src = "images\fashion-design-and-dressmaking-1.jpg" />
+<div class = "name"> <b> Zippers (30 Zippers). </b> </div>
+<p> <b> $34.00 </b> </p>
+<td style="padding-bottom:8px; padding-left:25px; padding-right:25px; padding-top:8px;";><img src = "images\vintage-dressmaking-tools-by-clover-japan.jpg" />
+<div class = "name"> <b> Dress Designing Tool set. </b> </div>
+<p> <b> $40.60 </b> </p>
+</td>
+</td></tr></table>
+<br />
+
+<h1> <b> <u> Cake Decorating </u> </b> </h1>
+<p> <b> Cake Decorating Tools</b> </p>
+<table style="margin-left:35%; background-color:#099"; border="1"; bordercolor="#000099";>
+<tr><td style="padding-bottom:8px; padding-left:30px; padding-right:30px; padding-top:8px;";>
+<img src = "images\$_35.jpg" />
+<div class = "name"> <b> Fondant Icing Designer(4 Designs). </b> </div>
+<p> <b> $50.30 </b> </p>
+</td>
+<td style="padding-bottom:8px; padding-left:30px; padding-right:30px; padding-top:8px;";>
+<img src = "images\1pcs-Cake-Decorating-Tools-Big-Russian-Tulip-Pastry-Tips-Tools-Stainless-Steel-Cream-Icing-Piping-Nozzles.jpg" />
+<div class = "name"> <b> Nozzles Set. </b> </div>
+<p> <b> $35.70 </b> </p>
+</td></tr>
+<tr><td style="padding-bottom:8px; padding-left:30px; padding-right:30px; padding-top:8px;";>
+<img src = "images\33pcs-Plunger-Fondant-Cutter-Cake-Tools-Cookie-Biscuit-Cake-Mold-Mould-C-4-e1516291311340.jpg" />
+<div class = "name"> <b> Fondant Icing Cutter. </b> </div>
+<p> <b> $29.80 </b> </p>
+<td style="padding-bottom:8px; padding-left:30px; padding-right:30px; padding-top:8px;";><img src = "images\UTB8rguulVfFXKJk43Otq6xIPFXab.jpg" />
+<div class = "name"> <b> Cake Icing Machine. </b> </div>
+<p> <b> $71.20 </b> </p>
+</td>
+</td></tr></table>
+    
+    <div style="background-color:#000">
+
+    <p class="footer"> <b> Join with our Newsletter </b> </p>
+    <form class="footer" onSubmit="newsletterfunction()" name="newsletter">
+    <b>Email :</b>   
+	<input type="text" name="email" value="">
+    <input type="SUBMIT"> <br> <br>
+    </form>
+    <br>
+    
+    <p class="footer"> <b> Safe Shopping and Delivery </b> </p>
+    <br />
+    <p class="footers"> <b> Hobby World </b> </p>
+    <p class="footers"> <b> No.62, Mallikarama Road, Ratmalana </b> </p>
+    <p class="footers"> <b> Telephone No: 0112713303 / 0769401597 </b> </p>
+    <p class="footers"> <b> hobbyworld@gmail.com </b> </p>
+    
+    </div>
+</body>
+</html>

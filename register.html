@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Website</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+
+<script>
+
+function registerfunction()
+{
+	var fname=document.registerform.email.value;
+	var lname=document.registerform.email.value;
+	var Email=document.registerform.email.value;
+	var password=document.registerform.email.value;
+	var comfirmpsd=document.registerform.email.value;
+	if (fname==null || fname==""||lname==null || lname=="" ||Email==null || Email==""||password==null || password==""|| confirmpsd==null || confirmpsd=="")
+        {
+            alert("Please Fill All Required Field.");
+            return false;
+        }
+	if(document.getElementById('password').value!=document.getElementById('confirmpsd').value)
+	{
+		alert("***Confirm Password doesn't match with the Password***");
+		return false;
+	}
+	if(Email.indexOf('@')<=0)
+	{
+		alert("***Invalid.Check the Email Id Again***");
+		return false;
+	}
+	
+	if(Email.charAt(Email.length-4)!='.' && Email.charAt(Email.length-3)!='.')
+	{
+		alert("***Invalid Email***");
+		return false;
+	}
+	else
+	{
+		alert("Welcome to Hobby World!!!");
+	}
+}
+
+function newsletterfunction()
+{
+	var b=document.newsletter.email.value;
+	if(b.indexOf('@')<=0)
+	{
+		alert("***Invalid.Check the Email Id Again***");
+		return false;
+	}
+	
+	if(b.charAt(b.length-4)!='.' && b.charAt(b.length-3)!='.')
+	{
+		alert("***Invalid Email***");
+		return false;
+	}
+}
+</script>
+
+	<div>
+	
+	<ul>
+	  <img src="images\Capture.PNG" width="120" height="100">
+	  <li> <a href="index.html"> Home </a></li>
+	  <li> <a href="gallery.html"> Gallery </a></li>
+	  <li> <a href="purchases.html"> Purchases </a></li>
+	  <li> <a href="news&promotions.html"> News and Promotions </a></li>
+	  <li><a href="aboutus.html"> About Us </a></li>
+	  <li><a href="contactus.html"> Contact Us </a></li>
+	  <li> <a href="signin.html"> Sign In </a></li>
+	  <li> <a href="register.html"> Register </a></li>
+	  </ul>
+		
+	</div>
+	
+    <div>
+	
+    <p class="a"> <b> Categories </b> </p>
+	<ul class="h">
+	  <li class="h"> <a href="collecting.html"> Collecting </a></li>
+	  <li class="h"> <a href="games.html"> Games </a></li>
+	  <li class="h"> <a href="reading.html"> Reading </a></li>
+	  <li class="h"> <a href="sports.html"> Sports </a></li>
+	  <li class="h"> <a href="performingarts.html"> Performing Arts </a></li>
+	  <li class="h"> <a href="other.html"> Other </a></li>
+	</ul>
+	</div>
+    
+	<div>
+	<br>
+	<br>
+		
+		<marquee> <b> Register now and Win 100 e-points!!! </b> </marquee>
+		<p> <b> Register in our website and be a loyalty member in our "Hobby World".</b> </p>
+		
+<p> <b>It may help us to make your delivery faster and easier. </b> </p>
+		
+		<p> <b> Checkout your purchases, gifts, promotions and other details just by</b></p>
+        <p><b>signing up to your email.</b> </p>
+	
+	</div>
+	<form name="registerform" onSubmit="registerfunction()">
+		<table>
+       	 	<tr><td><b>First Name :</b></td>
+				<td><input type="text" name="firstname" id="fname"> </td></tr>
+			<tr><td><b>Last Name :</b></td>
+				<td><input type="text" name="lastname" id="lname"> </td></tr>
+			<tr><td><b>Email :</b> </td>  
+				<td><input type="text" name="email" value="" id="Email"> </td></tr>
+			<tr><td><b>Password :</b></td>
+				<td><input type="password" name="password" id="password"></td></tr>
+			<tr><td><b>Confirm Password :</b> </td>  
+				<td><input type="password" name="confirmpsd" id="confirmpsd"></td></tr>
+            </table>			
+            <br>
+			<input type="SUBMIT" value="REGISTER" style="font-size:18px; font-family:'Times New Roman'">
+			
+			<p> <b>Already I'm a Member.</b>
+			<a class="normal" href="signin.html"> Sign in </a> </p>		
+	</form>
+		
+	</div>
+    
+    <div style="background-color:#000">
+
+    <p class="footer"> <b> Join with our Newsletter </b> </p>
+    <form class="footer" onSubmit="newsletterfunction()" name="newsletter">
+    <b>Email :</b>   
+	<input type="text" name="email" value="">
+    <input type="SUBMIT"> <br> <br>
+    </form>
+    <br>
+    
+    <p class="footer"> <b> Safe Shopping and Delivery </b> </p>
+    <br>
+    <p class="footers"> <b> Hobby World </b> </p>
+    <p class="footers"> <b> No.62, Mallikarama Road, Ratmalana </b> </p>
+    <p class="footers"> <b> Telephone No: 0112713303 / 0769401597 </b> </p>
+    <p class="footers"> <b> hobbyworld@gmail.com </b> </p>
+    
+    </div>
+</body>
+</html>

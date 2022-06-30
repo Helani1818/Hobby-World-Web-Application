@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Website</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<style>
+table{margin:auto;margin-left:15%;background:#099;}
+td{text-align:justify;}
+.name{padding:15px;text-align:center; color:#FFF;}
+</style>
+</head>
+
+<body>
+
+<script>
+function newsletterfunction()
+{
+	var b=document.newsletter.email.value;
+	if(b.indexOf('@')<=0)
+	{
+		alert("***Invalid.Check the Email Id Again***");
+		return false;
+	}
+	
+	if(b.charAt(b.length-4)!='.' && b.charAt(b.length-3)!='.')
+	{
+		alert("***Invalid Email***");
+		return false;
+	}
+}
+</script>
+
+<div>
+	
+	<ul>
+	  <img src="images\Capture.PNG" width="120" height="100">
+	  <li> <a href="index.html"> Home </a></li>
+	  <li> <a href="gallery.html"> Gallery </a></li>
+	  <li> <a href="purchases.html"> Purchases </a></li>
+	  <li> <a href="news&promotions.html"> News and Promotions </a></li>
+	  <li><a href="aboutus.html"> About Us </a></li>
+	  <li><a href="contactus.html"> Contact Us </a></li>
+	  <li> <a href="signin.html"> Sign In </a></li>
+	  <li> <a href="register.html"> Register </a></li>
+	  </ul>
+	</div>
+    
+    <div>
+	
+    <p class="a"> <b> Categories </b> </p>
+	<ul class="h">
+	  <li class="h"> <a href="collecting.html"> Collecting </a></li>
+	  <li class="h"> <a href="games.html"> Games </a></li>
+	  <li class="h"> <a href="reading.html"> Reading </a></li>
+	  <li class="h"> <a href="sports.html"> Sports </a></li>
+	  <li class="h"> <a href="performingarts.html"> Performing Arts </a></li>
+	  <li class="h"> <a href="other.html"> Other </a></li>
+	</ul>
+	</div>
+    
+<h1> <b> <u> Reading </u> </b> </h1>    
+<table style="margin-left:30%; background-color:#099"; border="1"; bordercolor="#000099";>
+	
+<tr><td style="padding-bottom:8px; padding-left:60px; padding-right:60px; padding-top:8px;";>
+<img src = "images\29ps-thriller23-c-ta.jpg" />
+<div class = "name"> <b> Feared. </b> </div>
+<p> <b> $10.00 </b> </p>
+</td>
+<td style="padding-bottom:8px; padding-left:60px; padding-right:60px; padding-top:8px;";><img src = "images\2177-v1-500x.jpg" />
+<div class = "name"> <b> All we ever wanted. </b> </div>
+<p> <b> $9.80 </b> </p>
+</td></tr>
+<tr><td style="padding-bottom:8px; padding-left:60px; padding-right:60px; padding-top:8px;";><img src = "images\6117055._UY630_SR1200,630_.jpg" />
+<div class = "name"> <b> The Greatest Show on Earth. </b> </div>
+<p> <b> $11.10 </b> </p>
+</td>
+<td style="padding-bottom:8px; padding-left:60px; padding-right:60px; padding-top:8px;";>
+<img src = "images\32148570.jpg" />
+<div class = "name"> <b> Before we were Yours. </b> </div>
+<p> <b> $10.20 </b> </p>
+</td></tr>
+<tr><td style="padding-bottom:8px; padding-left:60px; padding-right:60px; padding-top:8px;";>
+<img src = "images\best-books-2018-leave-no-trace.jpg" />
+<div class = "name"> <b> Leave no Trace. </b> </div>
+<p> <b> $10.90 </b> </p>
+</td>
+<td style="padding-bottom:8px; padding-left:60px; padding-right:60px; padding-top:8px;";><img src = "images\c827595826ee4e12f479813f278e46c8.jpg" />
+<div class = "name"> <b> Redeeming Angel. </b> </div>
+<p> <b> $11.10 </b> </p>
+</td></tr>
+<tr><td style="padding-bottom:8px; padding-left:60px; padding-right:60px; padding-top:8px;";><img src = "images\screen-shot-2018-04-18-at-11-34-14-1524047816.jpg" />
+<div class = "name"> <b> The Missing Girl. </b> </div>
+<p> <b> $9.90 </b> </p>
+</td>
+<td style="padding-bottom:8px; padding-left:60px; padding-right:60px; padding-top:8px;";>
+<img src = "images\The-English-Wife_Lauren-Willig.jpg" />
+<div class = "name"> <b> The English Wife. </b> </div>
+<p> <b> $9.40 </b> </p>
+</td>
+</tr>
+</table>
+    
+    <div style="background-color:#000">
+
+    <p class="footer"> <b> Join with our Newsletter </b> </p>
+    <form class="footer" onSubmit="newsletterfunction()" name="newsletter">
+    <b>Email :</b>   
+	<input type="text" name="email" value="">
+    <input type="SUBMIT"> <br> <br>
+    </form>
+    <br>
+    
+    <p class="footer"> <b> Safe Shopping and Delivery </b> </p>
+    <br />
+    <p class="footers"> <b> Hobby World </b> </p>
+    <p class="footers"> <b> No.62, Mallikarama Road, Ratmalana </b> </p>
+    <p class="footers"> <b> Telephone No: 0112713303 / 0769401597 </b> </p>
+    <p class="footers"> <b> hobbyworld@gmail.com </b> </p>
+    
+    </div>
+</body>
+</html>

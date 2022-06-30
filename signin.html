@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Website</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+<script>
+
+function signinfunction()
+{
+	var Email=document.signinform.email.value;
+	var Psd=document.signinform.password.value;
+	if (Email==null || Email==""||Psd==null || Psd=="")
+        {
+            alert("Please Fill All Required Field.");
+            return false;
+        }
+	else if(Email.indexOf('@')<=0)
+	{
+		alert("***Invalid.Check the Email Id Again***");
+		return false;
+	}
+	
+	else if(Email.charAt(Email.length-4)!='.' && Email.charAt(Email.length-3)!='.')
+	{
+		alert("***Invalid Email***");
+		return false;
+	}
+	else
+		{
+			alert("Welcome Again!!!");
+		}
+}
+
+function newsletterfunction()
+{
+	var b=document.newsletter.email.value;
+	if(b.indexOf('@')<=0)
+	{
+		alert("***Invalid.Check the Email Id Again***");
+		return false;
+	}
+	
+	if(b.charAt(b.length-4)!='.' && b.charAt(b.length-3)!='.')
+	{
+		alert("***Invalid Email***");
+		return false;
+	}
+}
+
+</script>
+	<div>
+	
+	<ul>
+	  <img src="images\Capture.PNG" width="120" height="100">
+	  <li> <a href="index.html"> Home </a></li>
+	  <li> <a href="gallery.html"> Gallery </a></li>
+	  <li> <a href="purchases.html"> Purchases </a></li>
+	  <li> <a href="news&promotions.html"> News and Promotions </a></li>
+	  <li><a href="aboutus.html"> About Us </a></li>
+	  <li><a href="contactus.html"> Contact Us </a></li>
+	  <li> <a href="signin.html"> Sign In </a></li>
+	  <li> <a href="register.html"> Register </a></li>
+	  </ul>
+		
+	</div>
+	<br>
+	<br>
+    
+    <div>
+	
+    <p class="a"> <b> Categories </b> </p>
+	<ul class="h">
+	  <li class="h"> <a href="collecting.html"> Collecting </a></li>
+	  <li class="h"> <a href="games.html"> Games </a></li>
+	  <li class="h"> <a href="reading.html"> Reading </a></li>
+	  <li class="h"> <a href="sports.html"> Sports </a></li>
+	  <li class="h"> <a href="performingarts.html"> Performing Arts </a></li>
+	  <li class="h"> <a href="other.html"> Other </a></li>
+	</ul>
+	</div>
+	
+	<div>
+		<h1> Welcome back to "Hobby World" !!!</h1>
+		<br>
+		<form name="signinform" onSubmit="signinfunction()">
+        <table style="margin-left:40%">
+		<tr> <td> <b>Email :</b> </td>    
+			<td><input type="text" name="email"  id="Email"value=""> </td> </tr>
+		<tr> <td> <b>Password :</b> </td>
+			<td> <input type="password" name="password" id="Psd"> </td> </tr>
+        </table>
+		<a class="normal" href="http://www.gmail.com"> Forget Password? </a> <br> <br>
+		<input type="SUBMIT" value="Sign In"> <br> <br>
+		
+		<p> <b>Not a Member.</b>
+		<a class="normal" href="register.html"> Sign Up </a> </p>
+		</form>
+        <br> <br>
+		
+	</div>
+	
+    <div style="background-color:#000">
+
+    <p class="footer"> <b> Join with our Newsletter </b> </p>
+    <form class="footer" name="newsletter" onSubmit="newsletterfunction()" >
+    <b>Email :</b>   
+	<input type="text" name="email" value="">
+    <input type="SUBMIT"> <br> <br>
+    </form>
+    <br>
+    
+    <p class="footer"> <b> Safe Shopping and Delivery </b> </p>
+    <br>
+    <p class="footers"> <b> Hobby World </b> </p>
+    <p class="footers"> <b> No.62, Mallikarama Road, Ratmalana </b> </p>
+    <p class="footers"> <b> Telephone No: 0112713303 / 0769401597 </b> </p>
+    <p class="footers"> <b> hobbyworld@gmail.com </b> </p>
+    
+    </div>
+</body>
+</html>

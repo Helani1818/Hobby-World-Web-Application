@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Website</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<style>
+table{margin:auto;margin-left:15%;background:#099;}
+td{text-align:justify;}
+.desc{padding:15px;text-align:center;}
+</style>
+</head>
+
+<body>
+
+<script>
+function newsletterfunction()
+{
+	var b=document.newsletter.email.value;
+	if(b.indexOf('@')<=0)
+	{
+		alert("***Invalid.Check the Email Id Again***");
+		return false;
+	}
+	
+	if(b.charAt(b.length-4)!='.' && b.charAt(b.length-3)!='.')
+	{
+		alert("***Invalid Email***");
+		return false;
+	}
+}
+</script>
+	<div>
+	
+	<ul>
+	  <img src="images\Capture.PNG" width="120" height="100">
+	  <li> <a href="index.html"> Home </a></li>
+	  <li> <a href="gallery.html"> Gallery </a></li>
+	  <li> <a href="purchases.html"> Purchases </a></li>
+	  <li> <a href="news&promotions.html"> News and Promotions </a></li>
+	  <li><a href="aboutus.html"> About Us </a></li>
+	  <li><a href="contactus.html"> Contact Us </a></li>
+	  <li> <a href="signin.html"> Sign In </a></li>
+	  <li> <a href="register.html"> Register </a></li>
+	  </ul>
+	</div>
+    
+    <div>
+	
+    <p class="a"> <b> Categories </b> </p>
+	<ul class="h">
+	  <li class="h"> <a href="collecting.html"> Collecting </a></li>
+	  <li class="h"> <a href="games.html"> Games </a></li>
+	  <li class="h"> <a href="reading.html"> Reading </a></li>
+	  <li class="h"> <a href="sports.html"> Sports </a></li>
+	  <li class="h"> <a href="performingarts.html"> Performing Arts </a></li>
+	  <li class="h"> <a href="other.html"> Other </a></li>
+	</ul>
+	</div>
+<table border="3">
+	
+<tr><td><h3> <u> Collecting </u> </h3>
+<img src = "images\stampcollecting5-carousel5.jpg" />
+<div class = "desc"> <b> Collecting can be differ from one person to another. Some examples are Stamp Collecting, Comic Collecting and Autograph Collecting. </b> </div>
+<a class="indexcheck" href="collecting.html"> >>> Check Out >>> </a>
+</td>
+
+<td><h3> <u> Games </u> </h3>
+<img src = "images\643x0w.jpg" />
+<div class = "desc"> <b> Nowadays most of the people are interested about games. Most common ones are Video Games, Card Games, Board Games and Jigsaw Puzzles.</b> </div>
+<a class="indexcheck" href="games.html"> >>> Check Out >>> </a>
+</td></tr>
+
+
+<tr><td><h3> <u> Reading </u> </h3>
+<img src = "images\bs2j8dwnj3rxyjsynuek.jpg" />
+<div class = "desc"> <b> Reading is an activity which most of the people like to do as their hobby. </b> </div>
+<a class="indexcheck" href="reading.html"> >>> Check Out >>> </a>
+</td>
+
+<td><h3> <u> Sports </u> </h3>
+<img src = "images\sports-tools-640-417.jpg" />
+<div class = "desc"> <b> Sports is an activity which helps people be healthy and also some of the people do it as a hobby as it gives them some mental relief. some of the Sports that people tend to do are Cricket, Tennis and Swimming. </b> </div>
+<a class="indexcheck" href="sports.html"> >>> Check Out >>> </a>
+</td></tr>
+
+
+<tr><td><h3> <u> Performing Arts </u> </h3>
+<img src = "images\istockphoto-472085847-612x612.jpg" />
+<div class = "desc"> <b> Performing Art can be differ from person to person. But all of them give some mental relief and also pleasure to the person. Some performing arts are dancing and music. </b> </div>
+<a class="indexcheck" href="performingarts.html"> >>> Check Out >>> </a>
+</td>
+
+
+<td><h3> <u> Other </u> </h3>
+<img src = "images\Supplies.jpg" />
+<div class = "desc"> <b> There are lot of hobbies. but here we have mentioned few of them. Anyway in this "Other" sector you acn have some idea about the CakeDecorating and Dress Making. </b> </div>
+<a class="indexcheck" href="other.html"> >>> Check Out >>> </a>
+</td></tr>
+</table>
+
+    <div style="background-color:#000">
+
+    <p class="footer"> <b> Join with our Newsletter </b> </p>
+    <form class="footer" onSubmit="newsletterfunction()" name="newsletter">
+    <b>Email :</b>   
+	<input type="text" name="email" value="">
+    <input type="SUBMIT"> <br> <br>
+    </form>
+    <br>
+    
+    <p class="footer"> <b> Safe Shopping and Delivery </b> </p>
+    <br>
+    <p class="footers"> <b> Hobby World </b> </p>
+    <p class="footers"> <b> No.62, Mallikarama Road, Ratmalana </b> </p>
+    <p class="footers"> <b> Telephone No: 0112713303 / 0769401597 </b> </p>
+    <p class="footers"> <b> hobbyworld@gmail.com </b> </p>
+    
+    </div>
+</body>
+</html>

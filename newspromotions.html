@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Website</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+<script>
+function newsletterfunction()
+{
+	var b=document.newsletter.email.value;
+	if(b.indexOf('@')<=0)
+	{
+		alert("***Invalid.Check the Email Id Again***");
+		return false;
+	}
+	
+	if(b.charAt(b.length-4)!='.' && b.charAt(b.length-3)!='.')
+	{
+		alert("***Invalid Email***");
+		return false;
+	}
+}
+</script>
+	<div>
+	
+	<ul>
+	  <img src="images\Capture.PNG" width="120" height="100">
+	  <li> <a href="index.html"> Home </a></li>
+	  <li> <a href="gallery.html"> Gallery </a></li>
+	  <li> <a href="purchases.html"> Purchases </a></li>
+	  <li> <a href="news&promotions.html"> News and Promotions </a></li>
+	  <li><a href="aboutus.html"> About Us </a></li>
+	  <li><a href="contactus.html"> Contact Us </a></li>
+	  <li> <a href="signin.html"> Sign In </a></li>
+	  <li> <a href="register.html"> Register </a></li>
+	  </ul>
+		
+	</div>
+    
+    <div>
+	
+    <p class="a"> <b> Categories </b> </p>
+	<ul class="h">
+	  <li class="h"> <a href="collecting.html"> Collecting </a></li>
+	  <li class="h"> <a href="games.html"> Games </a></li>
+	  <li class="h"> <a href="reading.html"> Reading </a></li>
+	  <li class="h"> <a href="sports.html"> Sports </a></li>
+	  <li class="h"> <a href="performingarts.html"> Performing Arts </a></li>
+	  <li class="h"> <a href="other.html"> Other </a></li>
+	</ul>
+	</div>
+    
+    <table style="margin-left:25%; background-color:#FFF"; border="1"; bordercolor="#000099";>
+    <tr> <td> <h1 style="color:#F00;"> Register Now and earn 100 e-points!!! </h1> 
+    <p> <b> This is a seasonal offer. </b> </p>
+    <p> <b> We will offer 100 e-points to all the members who will register to our website.</b> </p>
+    <p> <b> So Register now to earn 100 e-points. </b> </p> 
+    <p style="color:#F06;"> <b> This is only valid till 31st of January. </b> </p> </td> </tr>
+    </table>
+    
+    <p> </p>
+    
+    <table style="margin-left:25%; background-color:#FFF"; border="1"; bordercolor="#000099";>
+    <tr> <td> <h1 style="color:#F00;"> Buy 2 video games and Get 1 Free!!! </h1> 
+    <p> <b> All the Game players, this is an offer. </b> </p>
+    <p> <b> We will give you 1 video game when you purchase any 2 video games from our store. </b> </p>
+    <p> <b> So Hurry Up and Purchase any 2 video games. </b> </p> 
+    <p style="color:#F06;"> <b> This is only valid till 23rd of February. </b> </p> </td> </tr>
+    </table>
+    <div style="background-color:#000">
+
+    <p class="footer"> <b> Join with our Newsletter </b> </p>
+    <form class="footer" onSubmit="newsletterfunction()" name="newsletter">
+    <b>Email :</b>   
+	<input type="text" name="email" value="">
+    <input type="SUBMIT"> <br> <br>
+    </form>
+    <br>
+    
+    <p class="footer"> <b> Safe Shopping and Delivery </b> </p>
+    <br>
+    <p class="footers"> <b> Hobby World </b> </p>
+    <p class="footers"> <b> No.62, Mallikarama Road, Ratmalana </b> </p>
+    <p class="footers"> <b> Telephone No: 0112713303 / 0769401597 </b> </p>
+    <p class="footers"> <b> hobbyworld@gmail.com </b> </p>
+    
+    </div>
+</body>
+</html>

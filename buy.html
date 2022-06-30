@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Website</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+
+<script>
+
+function buyfunction()
+    {
+        var fname=document.forms["buyform"]["fullname"].value;
+        var address=document.forms["buyform"]["address"].value;
+        var telno=document.forms["buyform"]["telephoneno"].value;
+        var quan=document.forms["buyform"]["quantity"].value;
+        if (fname==null || fname=="",address==null || address=="",telno==null || telno=="",quan==null || quan=="")
+        {
+            alert("Please Fill All Required Field.");
+            return false;
+        }
+		else
+		{
+			alert("Your Purchase has been Placed.");
+		}
+    }
+function newsletterfunction()
+{
+	var b=document.newsletter.email.value;
+	if(b.indexOf('@')<=0)
+	{
+		alert("***Invalid.Check the Email Id Again***");
+		return false;
+	}
+	
+	if(b.charAt(b.length-4)!='.' && b.charAt(b.length-3)!='.')
+	{
+		alert("***Invalid Email***");
+		return false;
+	}
+}
+</script>
+
+<div>
+	
+	<ul>
+	  <img src="images\Capture.PNG" width="120" height="100">
+	  <li> <a href="index.html"> Home </a></li>
+	  <li> <a href="gallery.html"> Gallery </a></li>
+	  <li> <a href="purchases.html"> Purchases </a></li>
+	  <li> <a href="news&promotions.html"> News and Promotions </a></li>
+	  <li><a href="aboutus.html"> About Us </a></li>
+	  <li><a href="contactus.html"> Contact Us </a></li>
+	  <li> <a href="signin.html"> Sign In </a></li>
+	  <li> <a href="register.html"> Register </a></li>
+	  </ul>
+	</div>
+    
+    <div>
+	
+    <p class="a"> <b> Categories </b> </p>
+	<ul class="h">
+	  <li class="h"> <a href="collecting.html"> Collecting </a></li>
+	  <li class="h"> <a href="games.html"> Games </a></li>
+	  <li class="h"> <a href="reading.html"> Reading </a></li>
+	  <li class="h"> <a href="sports.html"> Sports </a></li>
+	  <li class="h"> <a href="performingarts.html"> Performing Arts </a></li>
+	  <li class="h"> <a href="other.html"> Other </a></li>
+	</ul>
+	</div>
+    
+    <h1> <b> <u> Your Purchase </u> </b> </h1>
+    <br />
+    <form name="buyform" onSubmit="buyfunction()">
+		<table>
+       	 	<tr><td><b>Full Name :</b></td>
+				<td><input type="text" name="fullname" id="fname"> </td></tr>
+			<tr><td><b>Address :</b></td>
+				<td><input type="text" name="address" id="address"> </td></tr>
+			<tr><td><b>Telephone No :</b> </td>  
+				<td><input type="text" name="telephoneno" id="telno"> </td></tr>
+			<tr><td><b>Quantity :</b></td>
+				<td><input type="text" name="quantity" id="quan"></td></tr>
+            </table>			
+            <br>
+			<input type="SUBMIT" value="OK" style="font-size:18px; font-family:'Times New Roman'">		
+	</form>
+<div style="background-color:#000">
+
+    <p class="footer"> <b> Join with our Newsletter </b> </p>
+    <form class="footer" onSubmit="newsletterfunction()" name="newsletter">
+    <b>Email :</b>   
+	<input type="text" name="email" value="">
+    <input type="SUBMIT"> <br> <br>
+    </form>
+    <br>
+    
+    <p class="footer"> <b> Safe Shopping and Delivery </b> </p>
+    <br />
+    <p class="footers"> <b> Hobby World </b> </p>
+    <p class="footers"> <b> No.62, Mallikarama Road, Ratmalana </b> </p>
+    <p class="footers"> <b> Telephone No: 0112713303 / 0769401597 </b> </p>
+    <p class="footers"> <b> hobbyworld@gmail.com </b> </p>
+    
+    </div>
+</body>
+</html>
